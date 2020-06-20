@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+		<typeAlias type="com.mega.sinchon.StoreDTO" alias="storeDTO"></typeAlias>
+		<typeAlias type="com.mega.sinchon.BbsDTO" alias="bbsDTO"></typeAlias>
+		<typeAlias type="com.mega.sinchon.MemberDTO" alias="memberDTO"></typeAlias>
+		<typeAlias type="com.mega.sinchon.QnaDTO" alias="qnaDTO"></typeAlias>
+		<typeAlias type="com.mega.sinchon.ReplyDTO" alias="replyDTO"></typeAlias>
+	</typeAliases>
+	<mappers>
+		<mapper resource="mapper/storeMapper.xml" />
+		<mapper resource="mapper/bbsMapper.xml" />
+		<mapper resource="mapper/memberMapper.xml" />
+		<mapper resource="mapper/qnaMapper.xml" />
+		<mapper resource="mapper/replyMapper.xml" />
+	</mappers>
+</configuration>

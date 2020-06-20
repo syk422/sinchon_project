@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+hr {
+	border: solid 1px navy;
+}
+
+#loginBox {
+	width: 400px;
+	height: 400px;
+	margin: 50px auto;
+	font-size: 20px;
+	background-color: lightgray;
+	padding: 5px 20px;
+	text-align: center;
+}
+
+input {
+	font-size: 20px;
+	height: 40px;
+	width: 300px;
+	margin: 10px 0px;
+	padding-left: 10px;
+}
+
+#loginBtn {
+	font-size: 20px;
+	height: 40px;
+	width: 300px;
+	background-color: navy;
+	color: white;
+	border: 0;
+	margin-top: 10px;
+}
+
+a {
+	text-decoration: none;
+	font-size: 15px;
+	margin-top: 15px;
+}
+
+a:hover {
+	text-decoration: underline;
+	font-weight: bold;
+}

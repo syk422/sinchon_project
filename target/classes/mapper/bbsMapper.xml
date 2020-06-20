@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="bbs">
+
+	<select id="list" resultType="bbsDTO">
+		select * from "BBS" where "storeNum" = #{storeNum}
+	</select>
+	
+	<insert id="insert" parameterType="bbsDTO">
+		insert into "BBS" values (tmp_seq.NEXTVAL,#{storeNum},#{content},#{writer},#{score},sysdate)
+	</insert>
+	
+	<delete id="delete" parameterType="bbsDTO">
+		delete from "BBS" where "bbsNum"=#{bbsNum}
+	</delete>
+	
+	<update id="update" parameterType="bbsDTO">
+		update "BBS" set content=#{content} where "bbsNum"=#{bbsNum}
+	</update>
+
+</mapper>

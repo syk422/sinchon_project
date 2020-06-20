@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+hr {
+	border: solid 1px navy;
+}
+
+#joinBox {
+	width: 500px;
+	height: 600px;
+	margin: 50px auto;
+	font-size: 20px;
+	background-color: lightgray;
+	padding: 5px 50px;
+	text-align: center;
+}
+
+input {
+	font-size: 20px;
+	height: 40px;
+	width: 300px;
+	margin: 10px 0px;
+	padding-left: 10px;
+}
+
+.title {
+	display: inline-block;
+	width: 130px;
+	text-align: right;
+	padding-right: 20px;
+}
+
+#joinBtn {
+	font-size: 20px;
+	height: 40px;
+	width: 300px;
+	background-color: navy;
+	color: white;
+	border: 0;
+	margin-top: 10px;
+}
+
+.err {
+	width: 300px;
+	color: red;
+	text-align: left;
+	font-size: 13px;
+	font-weight: bold;
+	padding-left: 90px;
+	margin: 0px 90px;
+}
+
+#joinFin {
+	background-color: white;
+	font-size: 30px;
+	margin: 70px 20px;
+	padding: 20px;
+}
+
+.selectBtn {
+	font-size: 20px;
+	height: 40px;
+	width: 150px;
+	background-color: navy;
+	color: white;
+	border: 0;
+	margin-top: 10px;
+}

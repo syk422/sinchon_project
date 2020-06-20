@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="member">
+	<delete id="delete" parameterType="memberDTO">
+		delete from "member" where id = #{id}
+	</delete>
+	
+	<update id="update" parameterType="memberDTO">
+		update "member" set pw = #{pw}, name = #{name}, tel = #{tel} where id = #{id}
+	</update>
+
+	<!-- 회원 정보 조회 -->
+	<select id="selectOne" parameterType="memberDTO" resultType="memberDTO">
+		select * from "member" where id = #{id}
+	</select>
+
+	<!-- id 중복체크 -->
+	<select id="idCheck" parameterType="memberDTO" resultType="memberDTO">
+		select id from "member" where id = #{id}
+	</select>
+
+	<!-- 로그인 체크, id,pw 일치할 경우 id 가져오기 -->
+	<select id="login" parameterType="memberDTO" resultType="memberDTO">
+		select id from "member" where id = #{id} and pw = #{pw}
+	</select>
+	
+	<!-- 회원가입 -->
+	<insert id="insert" parameterType="memberDTO">
+		insert into "member" values (#{id}, #{pw}, #{name}, #{tel})
+	</insert>
+</mapper>
